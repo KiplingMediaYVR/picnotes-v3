@@ -1,0 +1,21 @@
+<p>Notes</p>
+  <% @notes.each do |note| %>
+
+    <%= render './modals/note_modal', note: note %>
+    <div>
+      <%= image_tag note.image.url(:thumb) if note.image.present? %>
+      <!-- <button
+        id = 'show_note_btn'
+        type = 'button'
+        class = 'note-button'
+        data-toggle = 'modal'
+        data-target = '#<%= note.id %>'
+        data-whatever = '@mdo'>
+        <%= note.title.truncate(18) %>
+      </button> -->
+      <%= link_to 'View Note', note_path(note), remote: true %>
+    </div>
+  <% end %>
+</div>
+
+<div id='note-content'></div>

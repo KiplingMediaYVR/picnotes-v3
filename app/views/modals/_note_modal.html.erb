@@ -1,0 +1,31 @@
+<!-- <div class = "modal fade" id = '<%= note.id %>' tabindex='-1' role = 'dialog' aria-labelledby = '<%= note.id %> Label' aria-hidden='true'>
+  <div class = 'modal-dialog' role = 'document'>
+    <div class = 'modal-content'>
+      <div class = 'modal-header'>
+        <h5 class = 'modal-title' id = 'newNoteModalLabel'> <%= note.title %> </h5>
+        <button type = 'button' class = 'close' data-dismiss = 'modal' aria-label = 'Close'>
+          <span aria-hidden = 'true'> &times; </span>
+        </button>
+      </div>
+
+      <div class = 'modal-body'>
+        <%= image_tag note.image.url(:large) if note.image.present? %>
+        <p> <%= note.description %> </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="note-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div>
+         <p> Hi </p>
+      </div>
+    </div>
+  </div>
+</div>
